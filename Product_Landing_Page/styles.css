@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #333;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav-bar, header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(102, 102, 102);
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+
+}
+
+form {
+    width: 70%;
+    margin-top: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 40%;
+    max-width: 370px;
+    margin-left: 4%;
+}
+
+a {
+    width: 20%;
+    margin: 1px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: clamp(0.6rem, 5vw, 1.5vw);
+    text-decoration: none;
+    color: #333;
+    background-color: goldenrod;
+    padding: 5px;
+    font-weight: 600;
+    min-width: max-content;
+}
+
+a:active {
+    background-color: gold;
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 4%;
+    text-align: center;
+}
+
+#email {
+    width: 70%;
+    min-width: 200px;
+    max-width: 350px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 30px auto;
+    font-size: 1.2rem;
+}
+
+.submit {
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: goldenrod;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 5vw, 1.5vw);
+    cursor: pointer;
+}
+
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 10%;
+    row-gap: 70px;
+    padding-top: 100px;
+}
+
+#how-it-works {
+    padding-top: 100px;
+}
+
+i {
+    display: block;
+    color: gold;
+}
+
+.frame {
+    text-align: center;
+}
+
+iframe {
+    margin: 70px;
+}
+
+#pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    padding-top: 100px;
+}
+
+#pricing .price-header {
+    background-color: azure;
+    color: black;
+    border-radius: 3px 3px 0 0;
+}
+
+#pricing div {
+    text-align: center;
+    border: 1px solid azure;
+    background-color: rgb(77, 77, 77);
+    border-radius: 0 0 3px 3px;
+}
+
+#pricing .price-tag {
+    border: none;
+    border-radius: 3px;
+    max-width: 400px;
+}
+
+#pricing button {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(214, 214, 214);
+    width: 80%;
+    position: absolute;
+    margin-top: 80px;
+    padding-bottom: 30px;
+    color: black;
+    text-align: right;
+}
+
+footer a {
+    background-color: unset;
+}
+
+footer a:active {
+    background-color: unset;
+}
+
+@media screen and (width<600px) {
+
+    body {
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    #nav-bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    .logo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+        top: 50px;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: black;
+    }
+
+    #pricing {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 100%;
+        margin: 10px auto;
+        min-width: 300px;
+        min-height: 300px;
+    }
+}
